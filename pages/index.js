@@ -11,7 +11,10 @@ const Home = ({ data }) => {
   return (
     <Layout site={site} page={page}>
       {page.modules?.map((module, key) => (
-        <Module key={key} module={module} />
+        <>
+          <Module key={key} module={module} />
+          testing
+        </>
       ))}
     </Layout>
   )
